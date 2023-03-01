@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<script>
+    function addDiv() {
+        let div = document.createElement('div');
+        div.className = "myDiv";
+        let parentDiv = document.querySelector('#parent');
+        div.innerHTML = prompt("enter the text");
+        parentDiv.append(div);
+        div.addEventListener('click', function onClick(event) {
+            div.classList.replace("myDiv","divOnClick");
+        });
+    }
+
+    // function getLastDiv() {
+    //     let body = document.getElementsByTagName("div");
+    //     console.log(body);
+    // }
+
+    function removeDiv() {
+        let list = document.getElementById('parent');
+        list.removeChild(list.lastElementChild);
+    }
+</script>
+
+<body>
+    <div class="wrapFirst">
+        <header class="header">В этом блоке две кнопки. Они будут редактировать список дел</header>
+        <div class="wrapButton">
+            <button class="button" onclick="addDiv()">Нарисовать новый блок</button>
+            <button class="button" onclick="removeDiv()">Удалить последний блок</button>
+        </div>
+        <div class="wrap" id="parent"></div>
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,65 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+.header {
+    /* max-width: 500px;
+    margin: auto; */
+
+    background-color: white;
+    border: 1px solid sandybrown;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.button {
+    max-width: 200px;
+    margin: auto;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.myDiv {
+   
+    background-color: white;
+    border: 1px solid sandybrown;
+    border-radius: 6px;
+    margin: auto;
+    text-align: center;
+}
+
+.divOnClick {
+    
+    background-color: rgb(178, 24, 24);
+    border: 1px solid rgb(254, 254, 254);
+    border-radius: 6px;
+    margin: auto;
+    text-align: center;
+}
+
+.wrapFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid black 1px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #eee;
+}
+
+.wrapButton {
+    margin: auto;
+    gap: 5px;
+}
